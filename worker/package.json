@@ -1,0 +1,18 @@
+{
+  "name": "diskusjonsforum-worker",
+  "private": true,
+  "scripts": {
+    "build:frontend": "cd ../frontend && npm install && npm run build",
+    "dev": "npm run build:frontend && wrangler dev",
+    "deploy": "npm run build:frontend && wrangler deploy",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@zkpassport/sdk": "*"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.0.0",
+    "typescript": "^5.0.0",
+    "wrangler": "^3.78.0"
+  }
+}

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diskusjonsforum.no</title>
+  <link rel="icon" href="/logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+<!-- ── Header ── -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="site-logo">
+      <img src="/logo.svg" alt="Diskusjonsforum.no logo" width="40" height="40" />
+      <span>Diskusjonsforum.no</span>
+    </a>
+    <nav class="header-nav">
+      <span class="nav-link">Hjem</span>
+      <span class="nav-link">Kategorier</span>
+      <span class="nav-link">Populært</span>
+    </nav>
+    <div id="verified-badge" class="verified-badge" style="display:none">
+      <span class="badge-dot"></span>Verifisert
+    </div>
+  </div>
+</header>
+
+<!-- ── Forum layout ── -->
+<main class="container main-layout">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-card">
+      <h3>Kategorier</h3>
+      <ul class="category-list">
+        <li><a href="#">🏠 Generelt</a><span>1 247</span></li>
+        <li><a href="#">🏔️ Friluftsliv</a><span>834</span></li>
+        <li><a href="#">🍽️ Mat &amp; drikke</a><span>612</span></li>
+        <li><a href="#">🏛️ Politikk</a><span>2 901</span></li>
+        <li><a href="#">🎮 Spill &amp; tech</a><span>455</span></li>
+        <li><a href="#">💰 Økonomi</a><span>739</span></li>
+      </ul>
+    </div>
+    <div class="sidebar-card stats">
+      <h3>Forum-statistikk</h3>
+      <p>Innlegg i dag: <strong>341</strong></p>
+      <p>Brukere online: <strong>127</strong></p>
+      <p>Totalt innlegg: <strong>2 847 334</strong></p>
+    </div>
+  </aside>
+
+  <!-- Thread list -->
+  <section class="thread-list-section">
+    <div class="section-header">
+      <h2>Siste diskusjoner</h2>
+      <span class="thread-count">14 328 tråder</span>
+    </div>
+
+    <!-- Pinned threads (always visible) -->
+    <div class="thread pinned">
+      <div class="thread-icon">📌</div>
+      <div class="thread-body">
+        <a class="thread-title" href="#">Regler og retningslinjer for forumet</a>
+        <div class="thread-meta">av <strong>Moderator</strong> · Festet innlegg</div>
+      </div>
+      <div class="thread-stats"><span>Regler</span></div>
+    </div>
+
+    <div class="thread pinned">
+      <div class="thread-icon">📌</div>
+      <div class="thread-body">
+        <a class="thread-title" href="#">Velkommen til Diskusjonsforum.no – les dette først</a>
+        <div class="thread-meta">av <strong>Admin</strong> · Festet innlegg</div>
+      </div>
+      <div class="thread-stats"><span>Intro</span></div>
+    </div>
+
+    <!-- Regular threads (visible, no replies shown) -->
+    <div class="thread">
+      <div class="thread-icon">🔥</div>
+      <div class="thread-body">
+        <a class="thread-title" href="#">Hva er den beste fiskesuppe-oppskriften? Del din!</a>
+        <div class="thread-meta">av <strong>TrondheimKokken</strong> · 2 timer siden</div>
+      </div>
+      <div class="thread-stats"><strong>28</strong><span>svar</span></div>
+    </div>
+
+    <div class="thread">
+      <div class="thread-icon">🏛️</div>
+      <div class="thread-body">
+        <a class="thread-title" href="#">Er Stortinget for passivt i klimapolitikken?</a>
+        <div class="thread-meta">av <strong>BergensPolitiker</strong> · 4 timer siden</div>
+      </div>
+      <div class="thread-stats"><strong>147</strong><span>svar</span></div>
+    </div>
+
+    <div class="thread">
+      <div class="thread-icon">📺</div>
+      <div class="thread-body">
+        <a class="thread-title" href="#">NRK kutt 2025 – hva mener du om nedskjæringene?</a>
+        <div class="thread-meta">av <strong>Mediakritiker</strong> · 6 timer siden</div>
+      </div>
+      <div class="thread-stats"><strong>89</strong><span>svar</span></div>
+    </div>
+
+    <div class="thread">
+      <div class="thread-icon">🏔️</div>
+      <div class="thread-body">
+        <a class="thread-title" href="#">Beste fotturer i Jotunheimen – anbefalinger?</a>
+        <div class="thread-meta">av <strong>Fjellvandrer1984</strong> · 8 timer siden</div>
+      </div>
+      <div class="thread-stats"><strong>34</strong><span>svar</span></div>
+    </div>
+
+    <div class="thread">
+      <div class="thread-icon">💰</div>
+      <div class="thread-body">
+        <a class="thread-title" href="#">Boliglånsrente – hva betaler dere nå? (2025)</a>
+        <div class="thread-meta">av <strong>OsloBoligkjøper</strong> · i går</div>
+      </div>
+      <div class="thread-stats"><strong>67</strong><span>svar</span></div>
+    </div>
+
+    <!-- Locked content section -->
+    <div id="locked-section" class="locked-section">
+      <div class="locked-overlay">
+        <div class="locked-message">
+          <span class="lock-icon">🔒</span>
+          <p>Dette innholdet er kun tilgjengelig for verifiserte brukere over 16 år.</p>
+          <p class="lock-sub">Forumet bruker ZKPassport for alderbekreftelse — ingen persondata lagres.</p>
+        </div>
+      </div>
+      <div class="blurred-threads" aria-hidden="true">
+        <div class="thread blurred-item">
+          <div class="thread-icon">💬</div>
+          <div class="thread-body">
+            <div class="thread-title blurred-text">████████████ ████ ████████████████</div>
+            <div class="thread-meta blurred-text">av ████████ · 1 time siden</div>
+          </div>
+          <div class="thread-stats"><strong>43</strong><span>svar</span></div>
+        </div>
+        <div class="thread blurred-item">
+          <div class="thread-icon">🎮</div>
+          <div class="thread-body">
+            <div class="thread-title blurred-text">████████████████ ████ ███████████</div>
+            <div class="thread-meta blurred-text">av ████████ · 3 timer siden</div>
+          </div>
+          <div class="thread-stats"><strong>21</strong><span>svar</span></div>
+        </div>
+        <div class="thread blurred-item">
+          <div class="thread-icon">🏠</div>
+          <div class="thread-body">
+            <div class="thread-title blurred-text">███████████ ██████████ ████████████████</div>
+            <div class="thread-meta blurred-text">av ████████ · 5 timer siden</div>
+          </div>
+          <div class="thread-stats"><strong>56</strong><span>svar</span></div>
+        </div>
+        <div class="thread blurred-item">
+          <div class="thread-icon">🍽️</div>
+          <div class="thread-body">
+            <div class="thread-title blurred-text">████ ████ ██████████████████ ████</div>
+            <div class="thread-meta blurred-text">av ████████ · i går</div>
+          </div>
+          <div class="thread-stats"><strong>12</strong><span>svar</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Verify CTA -->
+    <div id="verify-section" class="verify-section">
+      <button id="verify-btn" class="verify-btn">
+        🪪 Bekreft at du er over 16 år
+      </button>
+      <p class="verify-note">
+        Bruker <strong>ZKPassport</strong> — kun bevis på alder, ingen annen data deles.
+      </p>
+    </div>
+
+  </section>
+</main>
+
+<!-- ── Verification modal ── -->
+<div id="modal" class="modal hidden" role="dialog" aria-modal="true"
+     aria-labelledby="modal-title">
+  <div id="modal-backdrop" class="modal-backdrop"></div>
+  <div class="modal-card">
+    <button id="modal-close" class="modal-close" aria-label="Lukk">&times;</button>
+    <h2 id="modal-title" class="modal-title">Aldersbekreftelse</h2>
+    <p class="modal-intro">Skann QR-koden med <strong>ZKPassport</strong>-appen for å bevise at du er over 16 år.</p>
+
+    <div class="qr-container">
+      <canvas id="qr-canvas"></canvas>
+      <div id="qr-loading" class="qr-loading">Laster inn…</div>
+    </div>
+
+    <p id="modal-status" class="modal-status">Kobler til…</p>
+
+    <!-- Deep link shown only on mobile via CSS media query -->
+    <a id="deeplink-btn" href="#" class="deeplink-btn mobile-only">
+      Åpne ZKPassport-appen
+    </a>
+
+    <p class="modal-fine">
+      Ingen persondata lagres. Kun bevis på at du er over 16 lagres midlertidig.
+    </p>
+  </div>
+</div>
+
+<script type="module" src="/app.bundle.js"></script>
+</body>
+</html>

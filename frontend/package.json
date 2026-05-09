@@ -1,0 +1,14 @@
+{
+  "name": "diskusjonsforum-frontend",
+  "private": true,
+  "scripts": {
+    "build": "esbuild app.js --bundle --outdir=. --entry-names=[name].bundle --chunk-names=chunks/[hash] --platform=browser --target=es2020 --define:global=globalThis --format=esm --splitting --log-level=info"
+  },
+  "dependencies": {
+    "@zkpassport/sdk": "*",
+    "qrcode": "^1.5.3"
+  },
+  "devDependencies": {
+    "esbuild": "^0.21.0"
+  }
+}

@@ -1,0 +1,7 @@
+node_modules/
+frontend/app.bundle.js
+frontend/chunks/
+.wrangler/
+dist/
+*.tsbuildinfo
+.env

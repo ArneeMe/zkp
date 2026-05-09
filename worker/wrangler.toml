@@ -1,0 +1,22 @@
+name = "diskusjonsforum"
+main = "src/index.ts"
+compatibility_date = "2025-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Serve the built frontend alongside the Worker.
+# Run `npm run deploy` (or `npm run dev`) from this directory —
+# it builds the frontend first, then passes it to wrangler.
+[assets]
+directory = "../frontend"
+binding = "ASSETS"
+
+[vars]
+# Toggle to "false" after testing with a real passport.
+# In dev mode the ZKPassport app accepts mock "Zero Knowledge Republic" passports.
+DEV_MODE = "true"
+
+# Workers KV – run `wrangler kv namespace create SESSIONS` and paste the IDs below.
+[[kv_namespaces]]
+binding = "KV"
+id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
+preview_id = "REPLACE_WITH_YOUR_KV_NAMESPACE_PREVIEW_ID"

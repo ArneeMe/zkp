@@ -1,5 +1,6 @@
 import { ZKPassport } from "@zkpassport/sdk"
-import type { Env } from "./index"
+
+interface Env { KV: KVNamespace; DEV_MODE: string }
 
 const SCOPE = "diskusjonsforum-alder-16"
 

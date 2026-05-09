@@ -1,18 +1,14 @@
 name = "diskusjonsforum"
-main = "worker/src/index.ts"
+pages_build_output_dir = "frontend"
 compatibility_date = "2025-01-01"
 compatibility_flags = ["nodejs_compat"]
 
-[assets]
-directory = "frontend"
-binding = "ASSETS"
-
 [vars]
-# Toggle to "false" after testing with a real passport.
-# In dev mode the ZKPassport app accepts mock "Zero Knowledge Republic" passports.
 DEV_MODE = "true"
 
-# Workers KV – run `wrangler kv namespace create SESSIONS` and paste the IDs below.
+# KV namespace – create in Cloudflare dashboard (Workers & Pages → KV),
+# then bind it to this Pages project under Settings → Functions → KV namespace bindings
+# with the variable name: KV
 [[kv_namespaces]]
 binding = "KV"
 id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"

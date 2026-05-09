@@ -1,4 +1,4 @@
-import type { Env } from "./index"
+interface Env { KV: KVNamespace; DEV_MODE: string }
 
 const COOKIE_NAME = "zkp_session"
 const SESSION_TTL = 86400 // 24 hours in seconds
